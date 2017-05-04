@@ -7,7 +7,7 @@ import java.time.LocalTime;
 import javax.swing.JOptionPane;
 
 /**
- * In the constructor you define the objects of the classes and the variables of the class
+ * In the constructor you define the objects of the classes and the variables 'hrActive' and 'alarm' as type LocalTime of the class
  * @author Miguel Sánchez Blanco
  */
 
