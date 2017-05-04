@@ -7,6 +7,10 @@ package miniproyecto;
  */
 public class Display {
     
+    boolean ledClock;
+    boolean ledAlarm;
+    boolean ledSET;
+    
     public void showHR(){
     
     }
