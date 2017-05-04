@@ -1,12 +1,12 @@
-
+/**
+ * This class 'Reloj' contains the 'main', the definition of the objects of the classes and the menu of the program
+ */
 package miniproyecto;
 
 import java.time.LocalTime;
 import javax.swing.JOptionPane;
 
 /**
- * This class 'Reloj' contains the 'main', the definition of the objects of the classes and the menu of the program
- * 
  * In the constructor you define the objects of the classes and the variables of the class
  * @author Miguel Sánchez Blanco
  */
