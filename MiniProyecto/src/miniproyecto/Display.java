@@ -4,7 +4,7 @@
 package miniproyecto;
 
 /** 
- * In the constructor you define the variables 
+ * In the constructor you define the variables 'ledClock', 'ledAlarm' and 'ledSET' as type boolean
  * @author Miguel Sánchez Blanco
  */
 
