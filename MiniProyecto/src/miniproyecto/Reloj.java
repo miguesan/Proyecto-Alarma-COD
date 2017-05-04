@@ -1,6 +1,7 @@
 
 package miniproyecto;
 
+import java.time.LocalTime;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,6 +14,9 @@ public class Reloj {
     Display display = new Display();
     Altavoz altavoz = new Altavoz();
     Botonera botonera = new Botonera();   
+    
+    LocalTime hrActive;
+    LocalTime alarm;
     
     public static void main(String[] args) {
         int opciones;
