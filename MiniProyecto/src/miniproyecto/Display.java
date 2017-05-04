@@ -11,15 +11,19 @@ public class Display {
     boolean ledAlarm;
     boolean ledSET;
     
-    public void showHR(){
-    
+    public void showClock(){
+        
     }
     
     public void showAlarm(){
         
     }
     
-    public void showLeds(){
+    public void showLeds(boolean showClock,boolean showAlarm, boolean showSET){
+        
+        ledClock = showClock;
+        ledAlarm = showAlarm;
+        ledSET = showSET;
         
     }
     
