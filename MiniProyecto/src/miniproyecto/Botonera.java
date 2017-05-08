@@ -3,6 +3,8 @@
  */
 package miniproyecto;
 
+import java.time.LocalTime;
+
 /**
  * The constructor defines the 'alarmActive', 'setHR' and 'setAlarm' variables as type boolean
  * @author Miguel Sánchez Blanco
@@ -48,12 +50,18 @@ public class Botonera {
      */
     public static void plusHR(){
         
+        Reloj.hrActive.plusHours(1);
+        Display.showClock();
+        
     }
     
     /**
      * The 'plusMin' method increases minutes
      */
     public static void plusMin(){
+        
+        Reloj.hrActive.plusMinutes(1);
+        Display.showClock();
         
     }
     

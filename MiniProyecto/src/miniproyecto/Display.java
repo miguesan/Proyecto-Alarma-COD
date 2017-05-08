@@ -22,9 +22,7 @@ public class Display {
      */
     public static void showClock(){
         
-        SimpleDateFormat sdf = new SimpleDateFormat("H:mm:ss");
-        System.out.println(sdf.format(new Date()));
-        
+        System.out.println(Reloj.hrActive.getHour()+" "+Reloj.hrActive.getMinute());
     }
     
     /**

@@ -17,8 +17,8 @@ public class Reloj {
     Altavoz altavoz = new Altavoz();
     Botonera botonera = new Botonera();   
     
-    LocalTime hrActive;
-    LocalTime alarm;
+    static public LocalTime hrActive;
+    static public LocalTime alarm;
     
     /**
      * Contains the application menu with options for running
@@ -27,15 +27,21 @@ public class Reloj {
     public static void main(String[] args) {
         int opciones;
         do{
-            opciones=Integer.parseInt(JOptionPane.showInputDialog("1) Configurar y Mostrar Hora\n 2)  \n0) Salir "));
+            opciones=Integer.parseInt(JOptionPane.showInputDialog("1) Configurar y Mostrar Hora\n 2) Incrementar Hora \n3) Incrementar Minutos  \n0) Salir "));
                 switch(opciones){
                     case 1:
                         Botonera.confHR();
                         break;
                     case 2:
-                        
+                        Botonera.plusHR();
                         break;
                     case 3:
+                        Botonera.plusMin();
+                        break;
+                    case 4:
+                        
+                        break;
+                    case 5:
                         
                         break;
                 }
