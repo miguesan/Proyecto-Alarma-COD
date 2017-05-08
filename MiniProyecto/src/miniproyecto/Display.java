@@ -3,6 +3,9 @@
  */
 package miniproyecto;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /** 
  * In the constructor you define the variables 'ledClock', 'ledAlarm' and 'ledSET' as type boolean
  * @author Miguel Sánchez Blanco
@@ -10,31 +13,34 @@ package miniproyecto;
 
 public class Display {
     
-    boolean ledClock;
-    boolean ledAlarm;
-    boolean ledSET;
+    static boolean ledClock;
+    static boolean ledAlarm;
+    static boolean ledSET;
     
     /**
-     * The method 'showClock' shows the current time
+     * The 'showClock' method shows the current time
      */
-    public void showClock(){
+    public static void showClock(){
+        
+        SimpleDateFormat sdf = new SimpleDateFormat("H:mm:ss");
+        System.out.println(sdf.format(new Date()));
         
     }
     
     /**
-     * The method 'showAlarm' shows the alarm time
+     * The 'showAlarm' method shows the alarm time
      */
-    public void showAlarm(){
+    public static void showAlarm(){
         
     }
     
     /**
-     * The method 'showLeds' shows the LEDs of the active functions
+     * The 'showLeds' method shows the LEDs of the active functions
      * @param showClock
      * @param showAlarm
      * @param showSET 
      */
-    public void showLeds(boolean showClock,boolean showAlarm, boolean showSET){
+    public static void showLeds(boolean showClock,boolean showAlarm, boolean showSET){
         
         ledClock = showClock;
         ledAlarm = showAlarm;

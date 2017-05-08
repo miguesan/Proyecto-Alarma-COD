@@ -9,19 +9,19 @@ package miniproyecto;
  */
 public class Altavoz {
     
-    String melodia;
+    static String melodia;
     
     /**
     * The 'playSound' method is responsible for reproducing the sound
     */
-    public void playSound(){
+    public static void playSound(){
         
     }
     
     /**
      * The 'ringON' method indicates the sound state
      */
-    public void ringON(){
+    public static void ringON(){
         
     }
     

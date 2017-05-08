@@ -9,56 +9,58 @@ package miniproyecto;
  */
 public class Botonera {
     
-    boolean alarmActive;
-    boolean setHR;
-    boolean setAlarm;
+    static boolean alarmActive;
+    static boolean setHR;
+    static boolean setAlarm;
+    
     
     /**
      * The 'alarmaON' method turns on the alarm
      */
-    public void alarmaON(){
+    public static void alarmaON(){
         
     }
     
     /**
      * The 'alarmaOFF' method turns off the alarm
      */
-    public void alarmaOFF(){
+    public static void alarmaOFF(){
         
     }
     
     /**
      * The 'confHR' method sets the time
      */
-    public void confHR(){
-        
+    public static void confHR(){
+        Display.showLeds(true, false, true);
+        Display.showClock();
     }
     
     /**
      * The 'confAlarma' method sets the alarm time
      */
-    public void confAlarma(){
+    public static void confAlarma(){
         
     }
     
     /**
-     * 'plusHR' method increments time
+     * The 'plusHR' method increments time
      */
-    public void plusHR(){
+    public static void plusHR(){
         
     }
     
     /**
-     * 'plusMin' method increases minutes
+     * The 'plusMin' method increases minutes
      */
-    public void plusMin(){
+    public static void plusMin(){
         
     }
     
     /**
      * The 'stopAlarm' method stops the alarm
      */
-    public void stopAlarm(){
+    public static void stopAlarm(){
         
     }
     
