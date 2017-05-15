@@ -22,7 +22,7 @@ public class Display {
      */
     public static void showClock(){
         
-        System.out.println(Reloj.hrActive.getHour()+" "+Reloj.hrActive.getMinute());
+        
     }
     
     /**
