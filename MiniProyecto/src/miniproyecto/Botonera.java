@@ -21,12 +21,17 @@ public class Botonera {
      */
     public static void alarmaON(){
         
+        Display.showLeds(true, false, false);
+        Display.showClock();
+        
     }
     
     /**
      * The 'alarmaOFF' method turns off the alarm
      */
     public static void alarmaOFF(){
+        
+        Display.showLeds(false, false, false);
         
     }
     
