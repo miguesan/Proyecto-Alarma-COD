@@ -15,7 +15,7 @@ public class Altavoz {
     * The 'playSound' method is responsible for reproducing the sound
     */
     public static void playSound(){
-        
+        System.out.println("tu Musica");
     }
     
     /**
