@@ -22,7 +22,7 @@ public class Altavoz {
      * The 'ringON' method indicates the sound state
      */
     public static void ringON(){
-        
+        System.out.println("Alarma Apagada");
     }
     
     
