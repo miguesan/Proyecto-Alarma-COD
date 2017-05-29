@@ -70,7 +70,7 @@ public class Botonera {
      */
     public static void plusHR(){
         
-        Reloj.hrActive.plusHours(Integer.parseInt(JOptionPane.showInputDialog("Introduca los minutos deseados")));
+        Reloj.hrActive.plusHours(Integer.parseInt(JOptionPane.showInputDialog("Introduca la hora deseados")));
         Display.showClock();
         
     }
