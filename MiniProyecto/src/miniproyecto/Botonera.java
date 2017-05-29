@@ -62,7 +62,7 @@ public class Botonera {
      * The 'confAlarma' method sets the alarm time
      */
     public static void confAlarma(){
-        
+        Display.showLeds(true, false, false);
     }
     
     /**
