@@ -27,10 +27,10 @@ public class Reloj {
     public static void main(String[] args) {
         int opciones1, opciones2;
         do{
-            opciones1=Integer.parseInt(JOptionPane.showInputDialog("1) Configurar y Mostrar Hora\n 2) Incrementar Hora \n3) Incrementar Minutos  \n0) Salir "));
+            opciones1=Integer.parseInt(JOptionPane.showInputDialog("1) Mostrar Hora\n 2) Configurar Hora \n3) Configurar Alarma  \n4) ON-OFF Alarma \n 5) Parar Alarma\n0) Salir "));
                 switch(opciones1){
                     case 1:
-                        Botonera.confHR();
+                        Display.showClock();
                         break;
                     case 2:
                         Botonera.confHR();
