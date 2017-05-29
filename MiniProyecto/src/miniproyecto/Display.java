@@ -25,14 +25,7 @@ public class Display {
         
         System.out.println(Reloj.hrActive.getHour()+ " : "+Reloj.hrActive.getMinute());
     }
-    
-    /**
-     * The 'showAlarm' method shows the alarm time
-     */
-    public static void showAlarm(){
         
-    }
-    
     /**
      * The 'showLeds' method shows the LEDs of the active functions
      * @param showClock
