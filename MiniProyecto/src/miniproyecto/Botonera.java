@@ -89,7 +89,8 @@ public class Botonera {
      * The 'stopAlarm' method stops the alarm
      */
     public static void stopAlarm(){
-        
+        System.out.println("Apagar Alarma");
+        Altavoz.ringON();
     }
     
     
