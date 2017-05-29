@@ -4,6 +4,8 @@
 package miniproyecto;
 
 import java.time.LocalTime;
+import java.util.TimerTask;
+import static miniproyecto.Reloj.alarm;
 
 /**
  * The constructor defines the 'alarmActive', 'setHR' and 'setAlarm' variables as type boolean
@@ -22,7 +24,18 @@ public class Botonera {
     public static void alarmaON(){
         
         Display.showLeds(true, false, false);
-        Display.showClock();
+        alarm = LocalTime.now().plusMinutes(1);
+        System.out.println("Alarma Guardada: "+alarm.getMinute()+" : "+alarm.getSecond());
+        TimerTask task = new TimerTask(){
+            @Override
+            public void run(){
+                if(alarm.getMinute() == Localtime.now().getMinute()){
+                    System.out.println("¡¡¡es la hora!!!");
+                }else {
+                    System.out.println(LocalTime.now().getHour()+" : "+ LocalTime.now().getMinute()+" : "+LocalTime.now().getSecond());
+                }
+            }
+        };
         
     }
     
