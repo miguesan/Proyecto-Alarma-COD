@@ -5,6 +5,7 @@ package miniproyecto;
 
 import java.time.LocalTime;
 import java.util.TimerTask;
+import javax.swing.JOptionPane;
 import static miniproyecto.Reloj.alarm;
 
 /**
@@ -45,6 +46,7 @@ public class Botonera {
     public static void alarmaOFF(){
         
         Display.showLeds(false, false, false);
+        JOptionPane.showMessageDialog(null,"Alarma OFF");
         
     }
     
