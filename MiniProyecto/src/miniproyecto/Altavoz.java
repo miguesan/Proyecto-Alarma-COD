@@ -10,7 +10,7 @@ package miniproyecto;
 public class Altavoz {
     
     static String melodia;
-    
+    static boolean ringON;
     /**
     * The 'playSound' method is responsible for reproducing the sound
     */
