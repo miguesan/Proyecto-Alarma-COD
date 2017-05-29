@@ -4,6 +4,7 @@
 package miniproyecto;
 
 import java.text.SimpleDateFormat;
+import java.time.Clock;
 import java.util.Date;
 
 /** 
@@ -22,7 +23,7 @@ public class Display {
      */
     public static void showClock(){
         
-        
+        System.out.println(Reloj.hrActive.getHour()+ " : "+Reloj.hrActive.getMinute());
     }
     
     /**
