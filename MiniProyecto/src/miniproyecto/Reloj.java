@@ -25,27 +25,47 @@ public class Reloj {
      * @param args 
      */
     public static void main(String[] args) {
-        int opciones;
+        int opciones1, opciones2;
         do{
-            opciones=Integer.parseInt(JOptionPane.showInputDialog("1) Configurar y Mostrar Hora\n 2) Incrementar Hora \n3) Incrementar Minutos  \n0) Salir "));
-                switch(opciones){
+            opciones1=Integer.parseInt(JOptionPane.showInputDialog("1) Configurar y Mostrar Hora\n 2) Incrementar Hora \n3) Incrementar Minutos  \n0) Salir "));
+                switch(opciones1){
                     case 1:
                         Botonera.confHR();
                         break;
                     case 2:
+                        Botonera.confHR();
                         Botonera.plusHR();
+                        Botonera.plusMin();
                         break;
                     case 3:
+                        Botonera.confAlarma();
+                        Botonera.plusHR();
                         Botonera.plusMin();
                         break;
                     case 4:
-                        
+                        do{
+                            opciones2=Integer.parseInt(JOptionPane.showInputDialog("1) Encender Alarma \n2) Apagar Alarma \n0) Volver"));
+                            switch(opciones2){
+                                case 1:
+                                    Botonera.alarmaON();
+                                break;
+                                case 2:
+                                    Botonera.alarmaOFF();
+                                break;
+                            }
+                        }while(opciones2!=0);
                         break;
                     case 5:
-                        
+                        Botonera.stopAlarm();
                         break;
+                    case 0:
+                        JOptionPane.showMessageDialog(null, "Salir");
+                        System.exit(0);
+                        break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "Error");
                 }
-            }while(opciones!=0);
+            }while(opciones1!=0);
     }
     
 }
