@@ -30,7 +30,7 @@ public class Botonera {
         TimerTask task = new TimerTask(){
             @Override
             public void run(){
-                if(alarm.getMinute() == Localtime.now().getMinute()){
+                if(alarm.getMinute() == LocalTime.now().getMinute()){
                     System.out.println("¡¡¡es la hora!!!");
                 }else {
                     System.out.println(LocalTime.now().getHour()+" : "+ LocalTime.now().getMinute()+" : "+LocalTime.now().getSecond());
