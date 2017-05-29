@@ -80,7 +80,7 @@ public class Botonera {
      */
     public static void plusMin(){
         
-        Reloj.hrActive.plusMinutes(1);
+        Reloj.hrActive.plusMinutes(Integer.parseInt(JOptionPane.showInputDialog("Introduca los minutos deseados")));
         Display.showClock();
         
     }
